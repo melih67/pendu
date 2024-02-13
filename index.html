@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white p-8">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mb-8">Jeu du pendu bien bancale</h1>
+        <div id="hangman" class="mb-8"></div>
+        <div class="flex justify-center mb-4">
+            <button id="startBtn"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Jouer</button>
+        </div>
+        <div id="gameStatus" class="text-2xl font-bold mb-4"></div>
+        <div id="wordDisplay" class="text-3xl font-bold mb-4 flex justify-center"></div>
+        <div id="guessInput" class="flex justify-center mb-4 hidden">
+            <input type="text" id="letterInput"
+                class="p-2 mr-2 text-center bg-gray-700 text-white border border-gray-700 rounded">
+            <button id="guessBtn"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Deviner</button>
+        </div>
+        <div id="letterButtons" class="flex flex-wrap justify-center"></div> <!-- Container for letter buttons -->
+    </div>
+
+    <script src="hangman.js"></script>
+</body>
+
+</html>

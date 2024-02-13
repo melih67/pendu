@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "inquirer": "^9.2.14",
+    "random-js": "^2.1.0"
+  }
+}
